@@ -10,10 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-@RestController // JSON 형태로 객체 데이터 반환 ( @Controller + @ResponseBody )
-                // @Controller : Model 객체를 만들어 데이터를 담고 View를 반환
-                // @ResponseBody : 객체를 HTTP 요청의 body 내용으로 매핑하여 클라이언트로 전송
-@RequestMapping("/accounts") // 요청이 들어온 URI와 Annotation의 value가 일치하면 해당 클래스나 메소드 실행
+@RestController
+@RequestMapping("/accounts")
 @RequiredArgsConstructor
 public class AccountController {
     private final AccountService accountService;

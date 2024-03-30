@@ -22,3 +22,4 @@ public abstract class BaseTimeEntity {
     @Column(insertable = false)
     private LocalDateTime modifiedDate;
 }
+
